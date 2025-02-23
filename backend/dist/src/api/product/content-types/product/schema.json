@@ -1,0 +1,52 @@
+{
+    "kind": "collectionType",
+    "collectionName": "products",
+    "info": {
+        "singularName": "product",
+        "pluralName": "products",
+        "displayName": "Product"
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "attributes": {
+        "Productimag": {
+            "allowedTypes": [
+                "images"
+            ],
+            "type": "media",
+            "multiple": true,
+            "required": false
+        },
+        "ProductTitle": {
+            "type": "string",
+            "required": true
+        },
+        "ProductPrice": {
+            "required": true,
+            "type": "decimal"
+        },
+        "ProductDescrip": {
+            "type": "text",
+            "required": true
+        },
+        "Catagori": {
+            "type": "enumeration",
+            "enum": [
+                "OUR BEST SELLERS",
+                "BEST SELLERS",
+                "GIFT SETS",
+                "SHOP RANGE",
+                "UNDER 210DH",
+                "UNDER 420DH",
+                "FOR HER",
+                "FOR HIM",
+                "BODY",
+                "HAIR",
+                "TRAVEL",
+                "NEW"
+            ],
+            "required": true
+        }
+    }
+}
